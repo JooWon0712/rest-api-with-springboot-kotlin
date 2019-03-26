@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository
  * Time: 18:03
  */
 @Repository
-interface AccountRepository : JpaRepository<Account, Long> {
+interface AccountRepository : JpaRepository<Account, Int> {
     fun findByEmail(email: String) : Account?
 }
